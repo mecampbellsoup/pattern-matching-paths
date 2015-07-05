@@ -1,9 +1,9 @@
-require_relative 'test_helper'
+require_relative '../test_helper'
 
-describe PatternMatch do
+describe PatternMatch::Runner do
   describe "when the input file path is valid" do
     let(:valid_path) { "example_input.txt" }
-    let(:matcher)    { PatternMatch.new(valid_path) }
+    let(:matcher)    { PatternMatch::Runner.new(valid_path) }
 
     describe "#match!" do
       it "returns the best-matching pattern for each path" do
@@ -43,7 +43,7 @@ describe PatternMatch do
     let(:invalid_path) { "foo" }
 
     it "outputs a helpful message" do
-      proc { PatternMatch.new(invalid_path) }.must_output "No such file or directory @ rb_sysopen - foo"
+      proc { PatternMatch::Runner.new(invalid_path) }.must_output "No such file or directory @ rb_sysopen - foo"
     end
   end
 end
