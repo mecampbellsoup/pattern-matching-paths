@@ -25,7 +25,7 @@ class DataGenerator
     # Next write the number of paths
     f.write "#{num_paths}\n"
     # Then write each path on its own line
-    num_patterns.times { f.write "#{path_string}\n" }
+    num_paths.times { f.write "#{path_string}\n" }
   end
 end
 

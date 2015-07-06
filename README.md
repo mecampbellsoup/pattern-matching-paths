@@ -1,3 +1,6 @@
+## Original challenge
+The challenge description and full rules can be found [here](https://gist.github.com/kayluhb/5d39cb3ccddaec0d54ee).
+
 ## Rules and conditions
 
 1. First row from input text, `N`, is the number of pattern matching options

@@ -1,0 +1,24 @@
+1024_patterns_1024_paths.txt
+./bin/pattern_match fixtures/$file  1.02s user 0.08s system 99% cpu 1.108 total
+128_patterns_128_paths.txt
+./bin/pattern_match fixtures/$file  0.38s user 0.07s system 99% cpu 0.455 total
+16384_patterns_16384_paths.txt
+./bin/pattern_match fixtures/$file  216.28s user 1.69s system 99% cpu 3:39.96 total
+16_patterns_16_paths.txt
+./bin/pattern_match fixtures/$file  0.39s user 0.07s system 98% cpu 0.464 total
+2048_patterns_2048_paths.txt
+./bin/pattern_match fixtures/$file  3.12s user 0.09s system 99% cpu 3.234 total
+256_patterns_256_paths.txt
+./bin/pattern_match fixtures/$file  0.45s user 0.08s system 97% cpu 0.541 total
+32_patterns_32_paths.txt
+./bin/pattern_match fixtures/$file  0.42s user 0.08s system 97% cpu 0.514 total
+4096_patterns_4096_paths.txt
+./bin/pattern_match fixtures/$file  14.11s user 0.20s system 97% cpu 14.657 total
+512_patterns_512_paths.txt
+./bin/pattern_match fixtures/$file  0.54s user 0.07s system 99% cpu 0.620 total
+64_patterns_64_paths.txt
+./bin/pattern_match fixtures/$file  0.38s user 0.07s system 98% cpu 0.459 total
+8192_patterns_8192_paths.txt
+./bin/pattern_match fixtures/$file  54.05s user 0.34s system 99% cpu 54.850 total
+8_patterns_8_paths.txt
+./bin/pattern_match fixtures/$file  0.39s user 0.08s system 90% cpu 0.523 total

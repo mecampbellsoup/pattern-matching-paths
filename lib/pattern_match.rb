@@ -19,7 +19,7 @@ class Array
 
     if multiple.size > 1
       multiple.reduce do |memo, pattern|
-        memo.wildcards.first > pattern.wildcards.first ? memo : pattern
+        (memo.wildcards.first > pattern.wildcards.first rescue false) ? memo : pattern
       end
     else
       fewest
