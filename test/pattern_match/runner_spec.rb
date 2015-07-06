@@ -18,23 +18,23 @@ describe PatternMatch::Runner do
     end
 
     it "initializes an array of the patterns" do
-      matcher.patterns.must_equal([
-        "*,b,*",
-        "a,*,*",
-        "*,*,c",
-        "foo,bar,baz",
-        "w,x,*,*",
-        "*,x,y,z"
+      matcher.patterns.map(&:pattern).must_equal([
+        %w(* b *),
+        %w(a * *),
+        %w(* * c),
+        %w(foo bar baz),
+        %w(w x * *),
+        %w(* x y z)
       ])
     end
 
     it "initializes an array of the paths to be matched" do
-      matcher.paths.must_equal([
-        "/w/x/y/z/",
-        "a/b/c",
-        "foo/",
-        "foo/bar/",
-        "foo/bar/baz/"
+      matcher.paths.map(&:path).must_equal([
+        %w(w x y z),
+        %w(a b c),
+        %w(foo),
+        %w(foo bar),
+        %w(foo bar baz)
       ])
     end
   end
