@@ -15,7 +15,7 @@ module PatternMatch
 
     def matches?(path)
       path_array = path.path
-      # [ 'a', 'b', 'c'] <=> [*, b, *]
+      # [ 'a', 'b', 'c'] <=> [*, 'b', *]
       matches = pattern.select.with_index do |key, i|
         [ "*", path_array[i] ].include? key
       end

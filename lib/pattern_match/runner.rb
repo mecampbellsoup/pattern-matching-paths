@@ -28,7 +28,7 @@ module PatternMatch
       if matches.size == 1
         matches.first.pattern_string
       elsif matches.size > 1
-        matches.with_fewest_wildcards.pattern_string
+        matches.with_optimized_wildcards.pattern_string
       else
         "NO MATCH"
       end

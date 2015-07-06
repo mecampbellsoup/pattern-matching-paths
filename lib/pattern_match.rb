@@ -8,7 +8,7 @@ module PatternMatch
 end
 
 class Array
-  def with_fewest_wildcards
+  def with_optimized_wildcards
     # identify pattern with fewest wildcards
     fewest = self.reduce do |memo, pattern|
       memo.wildcard_count < pattern.wildcard_count ? memo : pattern

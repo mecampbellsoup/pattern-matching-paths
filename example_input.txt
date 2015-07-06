@@ -11,13 +11,3 @@ a/b/c
 foo/
 foo/bar/
 foo/bar/baz/
-
-################
-#### OUTPUT ####
-################
-
-*,x,y,z
-a,*,*
-NO MATCH
-NO MATCH
-foo,bar,baz
